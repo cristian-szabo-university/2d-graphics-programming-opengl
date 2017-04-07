@@ -147,6 +147,29 @@ namespace Zeno
 		void setWndTitle(std::string szWndTitle);
 
 		/**
+		 * @fn	void Layout::setTimer(int nFrameRate);
+		 *
+		 * @brief	Sets timer.
+		 *
+		 * @param	nFrameRate	The frame rate.
+		 */
+
+		void setTimer(int nFrameRate);
+
+		/**
+		 * @fn	void Layout::setCamera(int nMapWidth, int nMapHeight, int nMapColumns, int nMapRows);
+		 *
+		 * @brief	Sets camera.
+		 *
+		 * @param	nMapWidth  	Width of the map.
+		 * @param	nMapHeight 	Height of the map.
+		 * @param	nMapColumns	The map columns.
+		 * @param	nMapRows   	The map rows.
+		 */
+
+		void setCamera(int nMapWidth, int nMapHeight, int nMapColumns, int nMapRows);
+
+		/**
 		 * @fn	std::string Layout::getWndTitle();
 		 *
 		 * @brief	Gets window title.

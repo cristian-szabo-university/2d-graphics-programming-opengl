@@ -9,7 +9,6 @@
 
 #pragma once
 
-#include <iostream>
 #include <vector>
 
 #include <zeno\particle.h>

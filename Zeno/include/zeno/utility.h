@@ -8,7 +8,6 @@
  *	Reference	:	http://www.gamedev.net/page/resources/_/technical/game-programming/collision-detection-r735
  */
 
-
 #pragma once
 
 #include <zeno\camera.h>

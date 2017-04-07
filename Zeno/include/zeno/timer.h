@@ -50,6 +50,26 @@ namespace Zeno
 		void update();
 
 		/**
+		 * @fn	bool Timer::canUpdate();
+		 *
+		 * @brief	Determine if we can update the layout objects and render them.
+		 *
+		 * @return	true if we can update, false if not.
+		 */
+
+		bool canUpdate();
+
+		/**
+		 * @fn	void Timer::setFrameRate(int nValue);
+		 *
+		 * @brief	Sets frame rate.
+		 *
+		 * @param	nValue	The value.
+		 */
+
+		void setFrameRate(int nValue);
+
+		/**
 		 * @fn	float Timer::getLastFrameTicks();
 		 *
 		 * @brief	Gets the last frame ticks.
@@ -91,6 +111,12 @@ namespace Zeno
 		unsigned long nFramesNumber;
 
 		/**
+		 * @brief	The frame rate.
+		 */
+
+		int nFrameRate;
+
+		/**
 		 * @brief	The last frame ticks.
 		 */
 
@@ -101,6 +127,12 @@ namespace Zeno
 		 */
 
 		float nLastFrameDuration;
+
+		/**
+		 * @brief	True if can render and update layout objects.
+		 */
+
+		bool bCanUpdate;
 
 		/**
 		 * @brief	The average frame duration which is the inverse of actual FPS.
